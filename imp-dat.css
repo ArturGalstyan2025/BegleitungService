@@ -1,0 +1,119 @@
+/* Allgemeine Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh; /* Sicherstellen, dass der Footer immer unten ist */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Container wächst, um Platz zu füllen */
+}
+
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    width: 100%;
+    margin-top: auto; /* Footer bleibt immer unten */
+}
+
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+h2, h3 {
+    font-size: 1.8em;
+    color: #1d3557;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    font-size: 1.5em;
+    color: #457b9d;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Text Styles */
+.intro, .pricing, .contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: 700;
+    color: #1d3557;
+}
+
+
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2, h3 {
+        font-size: 1.6em;
+    }
+}

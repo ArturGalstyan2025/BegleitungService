@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 120px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.top-contact {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.top-contact a {
+    background: white;
+    color: #1d3557;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    white-space: nowrap;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+.intro, .pricing p, .contact p {
+    font-size: 1.15em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Vehicles */
+.vehicle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.vehicle img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.vehicle p {
+    flex: 2;
+    font-size: 1.15em;
+}
+
+/* Contact */
+.phone-number,
+.email-contact {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.phone-number a,
+.email-contact a {
+    font-size: 1.6em;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.sms-note {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .vehicle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vehicle img {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .top-contact a {
+        font-size: 0.95em;
+        padding: 9px 15px;
+    }
+
+    .phone-number a,
+    .email-contact a {
+        font-size: 1.4em;
+    }
+}
+
+/* Small Phones 328px */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .tagline {
+        font-size: 0.95em;
+    }
+
+    .top-contact a {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+
+    .phone-number a,
+    .email-contact a {
+        font-size: 1.15em;
+    }
+
+    footer a {
+        font-size: 0.85em;
+    }
+
+    .footer-contact {
+        gap: 6px;
+    }
+
+    .container {
+        padding: 20px 16px;
+    }
+}
