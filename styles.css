@@ -80,23 +80,27 @@ section {
 
 /* Vehicles */
 .vehicle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.vehicle img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-right: 20px;
-    flex: 1;
+.vehicle-info {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.15em;
 }
 
 .vehicle p {
-    flex: 2;
-    font-size: 1.15em;
+    margin: 0;
 }
 
 /* Contact */
@@ -155,13 +159,11 @@ footer a {
     }
 
     .vehicle {
-        flex-direction: column;
-        text-align: center;
+        height: 250px;
     }
 
-    .vehicle img {
-        margin-bottom: 15px;
-        margin-right: 0;
+    .vehicle-info {
+        font-size: 1em;
     }
 
     .top-contact a {
@@ -205,5 +207,13 @@ footer a {
 
     .container {
         padding: 20px 16px;
+    }
+
+    .vehicle {
+        height: 200px;
+    }
+
+    .vehicle-info {
+        font-size: 0.9em;
     }
 }
