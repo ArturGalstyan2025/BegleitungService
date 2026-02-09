@@ -9,7 +9,6 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    padding-bottom: 120px;
 }
 
 /* Header */
@@ -131,7 +130,6 @@ footer {
     color: white;
     text-align: center;
     padding: 18px 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
